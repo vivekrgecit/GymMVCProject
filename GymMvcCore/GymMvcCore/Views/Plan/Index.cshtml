@@ -1,0 +1,71 @@
+﻿@model IEnumerable<PlanMasterDTO>
+@{
+    ViewBag.Title = "Plan Master Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/css/mvc-grid/mvc-grid.css" rel="stylesheet">
+
+@section Scripts {
+
+        <script src="~/js/mvc-grid/mvc-grid.js"></script>
+        <script>
+            document.querySelectorAll(".mvc-grid").forEach(element => new MvcGrid(element));
+        </script>
+    }
+    <script type="text/javascript">
+        function deleteCon() {
+            var retVal = confirm("Do you want to continue ?");
+            if (retVal = = true) {
+                alert("User wants to continue!");
+                return true;
+            } else {
+                alert("User does not want to continue!");
+                return false;
+            }
+        }
+
+    </script>
+
+}
+<div class="container">
+
+    <div class="clearfix"></div>
+    <div style="margin-top: 30px"></div>
+    <fieldset>
+        <legend class="legend">Plan Master Details</legend>
+
+
+        <div class="panel">
+
+            <div class="panel-body">
+
+
+                <div>
+                    @Html.ActionLink("Create Plan", "Create", "Plan", new { @class = "btn btn-info btn-pressure" })
+                </div>
+                <div style="margin-top: 5px"></div>
+                @(Html.Grid(Model).Build(columns =>
+           {
+
+               columns.Add(c => c.PlanName).Titled("PlanName").Filterable(true).Encoded(false);
+
+               columns.Add(c => c.PlanAmount).Titled("PlanAmount");
+
+               columns.Add(c => c.ServiceTax).Titled("ServiceTax");
+
+
+               columns.Add(c => c.TotalAmout).Titled("TotalAmout").Filterable(true).Encoded(false);
+               columns.Add(c => Html.ActionLink("Edit", "Edit", new { id = c.PlanID })).Titled("EDIT").Encoded(false);
+               columns.Add(c => Html.ActionLink("Delete", "Delete", new { id = c.PlanID }, new { onclick = "return confirm('Are you sure you wish to delete this Scheme?');" })).Titled("Delete").Encoded(false);
+
+           }).Empty("No data found")
+                .Sortable()
+                .Pageable()
+                )
+
+            </div>
+        </div>
+
+    </fieldset>
+</div>

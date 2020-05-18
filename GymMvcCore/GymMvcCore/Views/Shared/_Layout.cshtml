@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - CORE ASP.NET MVC Application</title>
+    <link href="~/Images/dotnetsaifavicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/css/bootstrap_old/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+
+        <div class="col-md-12 col-sm-12">
+              <partial name="_LoginPartial.cshtml" />
+        </div>
+
+    </header>
+    <div id="body">
+        @RenderSection("featured", required: false)
+        <section class="">
+            @RenderBody()
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="text-center footer">
+                Developed By <a href="mailto:saihacksoft@gmail.com">Saineshwar Bageri</a>
+                Designed By <a href="mailto:suryakantubhe@gmail.com">Suryakant Prakash ubhe</a>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

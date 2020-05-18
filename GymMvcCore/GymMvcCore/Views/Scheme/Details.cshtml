@@ -1,0 +1,51 @@
+﻿@model IEnumerable<SchemeMasterDTO>
+
+@{
+    ViewBag.Title = "Scheme Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/css/mvc-grid/mvc-grid.css" rel="stylesheet">
+
+<div class="container">
+
+    <div class="clearfix"></div>
+
+    <fieldset>
+        <legend class="legend">
+            Scheme Details
+        </legend>
+
+
+        <div class="panel">
+
+            <div class="panel-body">
+                <div>
+                    @Html.ActionLink("Create Scheme", "Create", "Scheme", null, new { @class = "btn btn-info btn-pressure" })
+                </div>
+
+                @(Html
+    .Grid(Model)
+    .Build(columns =>
+    {
+        columns.Add(c => c.SchemeID).Titled("Scheme ID").Filterable(true).Encoded(false);
+        columns.Add(c => c.SchemeName).Titled("SchemeName").Filterable(true).Encoded(false);
+        columns.Add(c =>  Html.ActionLink("EDIT", "EDIT", new { id = c.SchemeID })).Titled("Edit").Encoded(false);
+        columns.Add(c => Html.ActionLink("Delete", "Delete", new { id = c.SchemeID }, new { onclick = "return confirm('Are you sure you wish to delete this Scheme?');" })).Titled("Delete").Encoded(false);
+    })
+    .Empty("No data found")
+    .Sortable()
+    .Pageable()
+)
+            </div>
+        </div>
+    </fieldset>
+
+    @section scripts
+    {
+        <script src="~/js/mvc-grid/mvc-grid.js"></script>
+        <script>
+            document.querySelectorAll(".mvc-grid").forEach(element => new MvcGrid(element));
+        </script>
+    }
+</div>

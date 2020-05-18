@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Users>
+@{
+    ViewBag.Title = "All Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/css/mvc-grid/mvc-grid.css" rel="stylesheet">
+<div class="container">
+
+    <div class="logo col-sm-12 text-center col-md-12 "> <img alt="" src="~/Images/dotnetsai.png" /></div>
+
+    <div class="clearfix"></div>
+
+
+    <fieldset>
+        <legend class="legend">All Users</legend>
+
+        <div class="panel">
+
+            <div class="panel-body">
+
+                <div>
+                    @Html.ActionLink("Create User Account", "Register", "Account", new { @class = "btn btn-info btn-pressure" })
+                </div>
+                <div style="margin-top: 10px"></div>
+                @(Html.Grid(Model).Build(columns =>
+                    {
+                        columns.Add(c => c.Id).Titled("Id").Filterable(true);
+                        columns.Add(c => c.UserName).Titled("UserName").Filterable(true);
+                        columns.Add(c => c.EmailID).Titled("JoiningDate").Filterable(true);
+                    }).Empty("No data found")
+                .Sortable()
+                //.Pageable()
+                )
+            </div>
+        </div>
+    </fieldset>
+</div>
+@section Scripts {
+
+    <script src="~/js/mvc-grid/mvc-grid.js"></script>
+    <script>
+        document.querySelectorAll(".mvc-grid").forEach(element => new MvcGrid(element));
+    </script>
+}
