@@ -151,3 +151,4 @@ D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\obj\Release\netcoreapp3.1\stat
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\obj\Release\netcoreapp3.1\GymMvcCore.dll
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\obj\Release\netcoreapp3.1\GymMvcCore.pdb
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\obj\Release\netcoreapp3.1\GymMvcCore.genruntimeconfig.cache
+D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Release\netcoreapp3.1\web.config
