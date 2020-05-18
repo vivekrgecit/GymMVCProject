@@ -14,3 +14,5 @@ Application Deployment
 Reference
 https://docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&tabs=visual-studio
 
+Git URL
+https://github.com/vivekrgecit/GymMVCProject.git
