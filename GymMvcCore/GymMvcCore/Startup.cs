@@ -8,6 +8,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Azure.Services.AppAuthentication;
+using Microsoft.Azure.KeyVault;
+using Microsoft.Azure.KeyVault.Models;
+using System.Threading.Tasks;
 
 namespace GymMvcCore
 {
@@ -23,7 +27,15 @@ namespace GymMvcCore
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var conStr = _configuration.GetConnectionString("Mystring");
+            // Get Connection String from Azure KeyVault by using service principle service
+            AzureServiceTokenProvider azureServiceTokenProvider = new AzureServiceTokenProvider();
+            KeyVaultClient keyVaultClient = new KeyVaultClient(new KeyVaultClient.AuthenticationCallback(azureServiceTokenProvider.KeyVaultTokenCallback));
+            SecretBundle secret = keyVaultClient.GetSecretAsync("https://gymsqlconnectionstring.vault.azure.net/", "sqlconnectionstring").Result;
+
+            var conStr = secret.Value;
+            
+            // Get Connection String from appsettings.json
+            //var conStr = _configuration.GetConnectionString("Mystring");
             services.Configure<CookiePolicyOptions>(options =>
             {
                 options.CheckConsentNeeded = context => true;
@@ -52,6 +64,7 @@ namespace GymMvcCore
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
             });
+            services.AddApplicationInsightsTelemetry();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -22,9 +22,10 @@ namespace GymMvcCore
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder
-                    .UseKestrel()
+                    .UseIIS()
+                    //.UseKestrel()
                     .UseContentRoot(Directory.GetCurrentDirectory())
-                    .UseIISIntegration()
+                    //.UseIISIntegration()
                     .UseStartup<Startup>();
                 });
     }

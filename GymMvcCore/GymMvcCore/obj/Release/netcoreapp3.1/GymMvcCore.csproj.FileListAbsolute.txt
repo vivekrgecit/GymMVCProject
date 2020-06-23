@@ -152,3 +152,9 @@ D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\obj\Release\netcoreapp3.1\GymM
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\obj\Release\netcoreapp3.1\GymMvcCore.pdb
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\obj\Release\netcoreapp3.1\GymMvcCore.genruntimeconfig.cache
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Release\netcoreapp3.1\web.config
+D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Release\netcoreapp3.1\Microsoft.Azure.KeyVault.dll
+D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Release\netcoreapp3.1\Microsoft.Azure.KeyVault.WebKey.dll
+D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Release\netcoreapp3.1\Microsoft.Azure.Services.AppAuthentication.dll
+D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Release\netcoreapp3.1\Microsoft.Rest.ClientRuntime.dll
+D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Release\netcoreapp3.1\Microsoft.Rest.ClientRuntime.Azure.dll

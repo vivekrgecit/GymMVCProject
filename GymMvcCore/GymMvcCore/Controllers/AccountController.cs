@@ -8,17 +8,31 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Azure.Services.AppAuthentication;
+using Microsoft.Azure.KeyVault;
+using Microsoft.Azure.KeyVault.Models;
+using Microsoft.ApplicationInsights;
+using System.Diagnostics;
 
 namespace GymMvcCore.Controllers
 {
     public class AccountController : Controller
     {
+        private TelemetryClient telemetry;
+        private double indexLoadCounter;
+
         public IConfiguration _configuration { get; }
         public IAccountData objIAccountData { get; }
+
+        [Obsolete]
         public AccountController(IConfiguration configuration, IAccountData accountData)
         {
             objIAccountData = accountData;
             _configuration = configuration;
+
+            telemetry = new TelemetryClient();
+            indexLoadCounter = new Random().Next(1000);
+
         }
 
 
@@ -26,6 +40,24 @@ namespace GymMvcCore.Controllers
         [AllowAnonymous]
         public IActionResult Login()
         {
+            telemetry.TrackEvent("Loading the Index page");
+            telemetry.GetMetric("CountOfIndexPageLoads").TrackValue(indexLoadCounter);
+
+            try
+            {
+                Trace.TraceInformation("Raising a trivial exception");
+                throw new System.Exception("Trivial Exception for testing Tracking Exception feature in Application Insights");
+            }
+            catch (System.Exception ex)
+            {
+                Trace.TraceError("Capturing and managing the trivial exception");
+                telemetry.TrackException(ex);
+            }
+
+            //You need to instruct the TelemetryClient to send all in-memory data to the
+            //ApplicationInsights.
+            telemetry.Flush();
+
             return View();
         }
 
