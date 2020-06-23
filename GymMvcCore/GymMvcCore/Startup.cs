@@ -28,14 +28,13 @@ namespace GymMvcCore
         public void ConfigureServices(IServiceCollection services)
         {
             // Get Connection String from Azure KeyVault by using service principle service
-            AzureServiceTokenProvider azureServiceTokenProvider = new AzureServiceTokenProvider();
-            KeyVaultClient keyVaultClient = new KeyVaultClient(new KeyVaultClient.AuthenticationCallback(azureServiceTokenProvider.KeyVaultTokenCallback));
-            SecretBundle secret = keyVaultClient.GetSecretAsync("https://gymsqlconnectionstring.vault.azure.net/", "sqlconnectionstring").Result;
+            //AzureServiceTokenProvider azureServiceTokenProvider = new AzureServiceTokenProvider();
+            //KeyVaultClient keyVaultClient = new KeyVaultClient(new KeyVaultClient.AuthenticationCallback(azureServiceTokenProvider.KeyVaultTokenCallback));
+            //SecretBundle secret = keyVaultClient.GetSecretAsync("https://gymsqlconnectionstring.vault.azure.net/", "sqlconnectionstring").Result;
+            //var conStr = secret.Value;
 
-            var conStr = secret.Value;
-            
             // Get Connection String from appsettings.json
-            //var conStr = _configuration.GetConnectionString("Mystring");
+            var conStr = _configuration.GetConnectionString("Mystring");
             services.Configure<CookiePolicyOptions>(options =>
             {
                 options.CheckConsentNeeded = context => true;
@@ -85,7 +84,7 @@ namespace GymMvcCore
             app.UseStaticFiles();
             app.UseSession();
             app.UseRouting();
-           
+
             app.UseCookiePolicy();
             app.UseAuthentication();
             app.UseAuthorization();

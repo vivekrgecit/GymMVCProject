@@ -18,8 +18,8 @@ namespace GymMvcCore.Controllers
 {
     public class AccountController : Controller
     {
-        private TelemetryClient telemetry;
-        private double indexLoadCounter;
+        //private TelemetryClient telemetry;
+        //private double indexLoadCounter;
 
         public IConfiguration _configuration { get; }
         public IAccountData objIAccountData { get; }
@@ -30,8 +30,8 @@ namespace GymMvcCore.Controllers
             objIAccountData = accountData;
             _configuration = configuration;
 
-            telemetry = new TelemetryClient();
-            indexLoadCounter = new Random().Next(1000);
+            //telemetry = new TelemetryClient();
+            //indexLoadCounter = new Random().Next(1000);
 
         }
 
@@ -40,8 +40,8 @@ namespace GymMvcCore.Controllers
         [AllowAnonymous]
         public IActionResult Login()
         {
-            telemetry.TrackEvent("Loading the Index page");
-            telemetry.GetMetric("CountOfIndexPageLoads").TrackValue(indexLoadCounter);
+            //telemetry.TrackEvent("Loading the Index page");
+            //telemetry.GetMetric("CountOfIndexPageLoads").TrackValue(indexLoadCounter);
 
             try
             {
@@ -51,12 +51,12 @@ namespace GymMvcCore.Controllers
             catch (System.Exception ex)
             {
                 Trace.TraceError("Capturing and managing the trivial exception");
-                telemetry.TrackException(ex);
+                //telemetry.TrackException(ex);
             }
 
             //You need to instruct the TelemetryClient to send all in-memory data to the
             //ApplicationInsights.
-            telemetry.Flush();
+            //telemetry.Flush();
 
             return View();
         }
