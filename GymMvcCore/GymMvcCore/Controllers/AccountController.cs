@@ -11,7 +11,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Azure.Services.AppAuthentication;
 using Microsoft.Azure.KeyVault;
 using Microsoft.Azure.KeyVault.Models;
-using Microsoft.ApplicationInsights;
 using System.Diagnostics;
 
 namespace GymMvcCore.Controllers
@@ -40,9 +39,6 @@ namespace GymMvcCore.Controllers
         [AllowAnonymous]
         public IActionResult Login()
         {
-            //telemetry.TrackEvent("Loading the Index page");
-            //telemetry.GetMetric("CountOfIndexPageLoads").TrackValue(indexLoadCounter);
-
             try
             {
                 Trace.TraceInformation("Raising a trivial exception");
@@ -51,12 +47,7 @@ namespace GymMvcCore.Controllers
             catch (System.Exception ex)
             {
                 Trace.TraceError("Capturing and managing the trivial exception");
-                //telemetry.TrackException(ex);
             }
-
-            //You need to instruct the TelemetryClient to send all in-memory data to the
-            //ApplicationInsights.
-            //telemetry.Flush();
 
             return View();
         }

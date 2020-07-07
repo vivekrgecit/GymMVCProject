@@ -157,20 +157,4 @@ D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\Micros
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\obj\Debug\netcoreapp3.1\GymMvcCore.csproj.CoreCompileInputs.cache
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\obj\Debug\netcoreapp3.1\GymMvcCore.MvcApplicationPartsAssemblyInfo.cs
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\obj\Debug\netcoreapp3.1\GymMvcCore.MvcApplicationPartsAssemblyInfo.cache
-D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\ApplicationInsights.config
-D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\Connected Services\Application Insights\ConnectedService.json
-D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\Microsoft.ApplicationInsights.dll
-D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\Microsoft.ApplicationInsights.AspNetCore.dll
-D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\Microsoft.AI.DependencyCollector.dll
-D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\Microsoft.AI.EventCounterCollector.dll
-D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\Microsoft.AI.PerfCounterCollector.dll
-D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\Microsoft.AI.WindowsServer.dll
-D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\Microsoft.AI.ServerTelemetryChannel.dll
-D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DiagnosticAdapter.dll
-D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.ApplicationInsights.dll
-D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
-D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
-D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
-D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
-D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\obj\Debug\netcoreapp3.1\GymMvcCore.csprojAssemblyReference.cache

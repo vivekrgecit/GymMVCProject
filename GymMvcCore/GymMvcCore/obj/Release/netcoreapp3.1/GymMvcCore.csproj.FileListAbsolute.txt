@@ -158,8 +158,6 @@ D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Release\netcoreapp3.1\Micr
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Release\netcoreapp3.1\Microsoft.Rest.ClientRuntime.dll
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Release\netcoreapp3.1\Microsoft.Rest.ClientRuntime.Azure.dll
-D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Release\netcoreapp3.1\ApplicationInsights.config
-D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Release\netcoreapp3.1\Connected Services\Application Insights\ConnectedService.json
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Release\netcoreapp3.1\Microsoft.ApplicationInsights.dll
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Release\netcoreapp3.1\Microsoft.ApplicationInsights.AspNetCore.dll
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Release\netcoreapp3.1\Microsoft.AI.DependencyCollector.dll
