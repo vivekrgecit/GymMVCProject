@@ -23,7 +23,6 @@ D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\runtim
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\obj\Debug\netcoreapp3.1\GymMvcCore.csprojAssemblyReference.cache
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\obj\Debug\netcoreapp3.1\GymMvcCore.RazorAssemblyInfo.cache
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\obj\Debug\netcoreapp3.1\GymMvcCore.RazorAssemblyInfo.cs
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\obj\Debug\netcoreapp3.1\GymMvcCore.AssemblyInfoInputs.cache
@@ -174,3 +173,4 @@ D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\System
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
 D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\ITCodeRepo\GymMVCProject\GymMvcCore\GymMvcCore\obj\Debug\netcoreapp3.1\GymMvcCore.csprojAssemblyReference.cache

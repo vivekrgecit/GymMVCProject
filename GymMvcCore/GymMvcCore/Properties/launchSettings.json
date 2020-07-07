@@ -14,7 +14,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "KEY_VAULT_END_POINT": "https://gymsqlconnectionstring.vault.azure.net/",
-        "KEY_VAULT_SECRETE_KEY_NAME": "sqlconnectionstring"
+        "KEY_VAULT_SECRETE_KEY_NAME": "sqlconnectionstring1"
       }
     },
     "GymMvcCore": {
@@ -24,7 +24,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "KEY_VAULT_END_POINT": "https://gymsqlconnectionstring.vault.azure.net/",
-        "KEY_VAULT_SECRETE_KEY_NAME": "sqlconnectionstring"
+        "KEY_VAULT_SECRETE_KEY_NAME": "sqlconnectionstring1"
       }
     }
   }

@@ -30,7 +30,7 @@ namespace GymMvcCore
             // Get Connection String from Azure KeyVault by using service principle service
             //AzureServiceTokenProvider azureServiceTokenProvider = new AzureServiceTokenProvider();
             //KeyVaultClient keyVaultClient = new KeyVaultClient(new KeyVaultClient.AuthenticationCallback(azureServiceTokenProvider.KeyVaultTokenCallback));
-            //SecretBundle secret = keyVaultClient.GetSecretAsync("https://gymsqlconnectionstring.vault.azure.net/", "sqlconnectionstring").Result;
+            //SecretBundle secret = keyVaultClient.GetSecretAsync("https://gymsqlconnectionstring.vault.azure.net/", Environment.GetEnvironmentVariable("KEY_VAULT_SECRETE_KEY_NAME")).Result;
             //var conStr = secret.Value;
 
             // Get Connection String from appsettings.json
